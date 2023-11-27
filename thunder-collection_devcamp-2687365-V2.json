@@ -1,0 +1,184 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "devcamp-2687365",
+    "dateExported": "2023-10-30T23:36:32.086Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "7041f2ed-95bb-483c-816e-f7ecb4905c7d",
+            "name": "bootcamps",
+            "containerId": "",
+            "created": "2023-10-30T19:17:05.335Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "49c67fb2-0701-4a1f-85d6-a63fe8ca6604",
+            "name": "courses",
+            "containerId": "",
+            "created": "2023-10-30T19:17:05.336Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "fc7a8798-742f-4a08-9e0f-14f1281dea07",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "7041f2ed-95bb-483c-816e-f7ecb4905c7d",
+            "name": "Consultar todos los bootcamps",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-30T19:17:05.335Z",
+            "modified": "2023-10-30T22:10:29.572Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "32a7101d-6132-406b-9a81-80c57acf4ef2",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "7041f2ed-95bb-483c-816e-f7ecb4905c7d",
+            "name": "Crear bootcamp",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-10-30T19:17:05.337Z",
+            "modified": "2023-10-30T23:04:46.284Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Scrum bootcamp\",\n  \"phone\":1234567,\n  \"address\":\"Sena calle 52\",\n  \"topics\":[\"Artificial Inteligence\"],\n  \"createdAt\":\"2023-10-30\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e00935b6-5d0d-40f6-92f0-e207aaa3e392",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "7041f2ed-95bb-483c-816e-f7ecb4905c7d",
+            "name": "Consultar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/65403d1789d3af25e9934809",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-30T19:17:05.336Z",
+            "modified": "2023-10-30T23:32:47.420Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ba183023-0ac2-498f-a8dc-9034769e962f",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "7041f2ed-95bb-483c-816e-f7ecb4905c7d",
+            "name": "Editar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/65403d1789d3af25e9934809",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-10-30T19:17:05.338Z",
+            "modified": "2023-10-30T23:33:22.788Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Scrum bootcamp actualizado\",\n  \"phone\":12345671,\n  \"address\":\"Sena calle 52 actualizado\",\n  \"topics\":[\"Artificial Inteligence\"],\n  \"createdAt\":\"2023-10-30\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dbffc3c8-dc6e-428c-9327-d47a1345fffe",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "7041f2ed-95bb-483c-816e-f7ecb4905c7d",
+            "name": "Eliminar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/65403a3eb0698060353fc4b4",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-30T19:17:05.339Z",
+            "modified": "2023-10-30T23:26:38.944Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "66a1f05d-7ce2-4841-ae31-8cb1cd125b70",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "49c67fb2-0701-4a1f-85d6-a63fe8ca6604",
+            "name": "Consultar todos los cursos",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-30T19:17:05.340Z",
+            "modified": "2023-10-30T19:17:05.340Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0c3afc37-12b2-473e-8914-ae5ed3ff2b7c",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "49c67fb2-0701-4a1f-85d6-a63fe8ca6604",
+            "name": "Crear curso",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-10-30T19:17:05.341Z",
+            "modified": "2023-10-30T19:17:05.341Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b6dbe796-dfdc-4c77-aaa1-0a0a26110d36",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "49c67fb2-0701-4a1f-85d6-a63fe8ca6604",
+            "name": "Consultar bootcamp por id",
+            "url": "http://127.0.0.1:5000/courses/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-10-30T19:17:05.342Z",
+            "modified": "2023-10-30T19:17:05.342Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2215d22b-a34b-4b7a-afa6-7ec3c5a08c77",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "49c67fb2-0701-4a1f-85d6-a63fe8ca6604",
+            "name": "Editar bootcamp por id",
+            "url": "http://127.0.0.1:5000/courses/1",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-10-30T19:17:05.343Z",
+            "modified": "2023-10-30T19:17:05.343Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9a78bee-0ac7-40c7-9062-a834afb4ad1e",
+            "colId": "2860ff52-d1e7-4d59-bfb9-32c9a88b4cfc",
+            "containerId": "49c67fb2-0701-4a1f-85d6-a63fe8ca6604",
+            "name": "Eliminar bootcamp por id",
+            "url": "http://127.0.0.1:5000/courses/1",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-10-30T19:17:05.344Z",
+            "modified": "2023-10-30T19:17:05.344Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
